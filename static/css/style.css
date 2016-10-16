@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+	.row-eq-height {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+.cv {
+	text-align: left;
+}
+
+.cv .page-header {
+	color: #f05f40;
+	border-bottom: 3px solid #f05f40;
+}
+
+.cv-contact {
+	padding: 60px 20px;
+}
+
+.cv-contact .name {
+	text-align: center;
+	padding-bottom: 40px;
+}
+.cv-contact .name img {
+	width: 75%;
+	display: block;
+	margin: auto;
+}
+
+.cv-contact a {
+	color: #fff;
+}
+
+.cv dt  {
+	width: 100px;
+}
+
+@media (min-width: 768px) {
+	.cv dd {
+		margin-left: 120px;
+	}
+}
+
+.cv-contact {
+}

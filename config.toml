@@ -20,7 +20,7 @@ theme = "hugo-creative-theme"
 	# For more informtion take a look at the README.
 
 	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
+	# information about you and your website.
 	name = "Paweł Chudzik"
 	description = "Paweł Chudzik homepage"
 
@@ -32,7 +32,7 @@ theme = "hugo-creative-theme"
 		brand = "Paweł Chudzik"
 
 		[params.navigation.links]
-			about     = "About"
+			about	 = "About"
 			services  = "Services"
 			portfolio = "Portfolio"
 			contact   = "Contact"
@@ -41,13 +41,13 @@ theme = "hugo-creative-theme"
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Paweł Chudzik"
+		slogan	 = "Paweł Chudzik"
 		subtitle   = "Eager to learn<br>IT consultant<br>Java developer<br>Javascript developer<br>Clean code enthusiast<br>Automated testing fan<br>Perfect software architecture chaser"
 		buttonText = "Find out more"
 
 	# About section
 	[params.about]
-		headline    = "About me"
+		headline	= "About me"
 		description = "My name is Paweł Chudzik I live in Królewiec small vilage next to Mińsk Mazowiecki in Poland. I'm software engineer with 6+ years of experience in solving complex and trival problems. During my career I have been developing a lot of things from big and complicated systems to small few liners to make life easier. I have expierence in variety of technologies, web frameworks, application servers, databases and tools. I care about good quality software. In pursuit to find perfect code I'm constantly improving my skills by learning new technologies and frameworks."
 		buttonText  = "Get started!"
 		buttonLink = "#contact"
@@ -57,12 +57,12 @@ theme = "hugo-creative-theme"
 	[params.services]
 		headline = "At your service"
 
-        [[params.services.list]]
-            icon = "fa-code"
-            title = "Software development"
-            description = "Well-tested good quality software which works."
+		[[params.services.list]]
+			icon = "fa-code"
+			title = "Software development"
+			description = "Well-tested good quality software which works."
 
-        [[params.services.list]]
+		[[params.services.list]]
 			icon = "fa-paper-plane"
 			title = "Agile partices"
 			description = "Customer satisfaction is achievable by early and continuous delivery of valuable software."
@@ -88,27 +88,27 @@ theme = "hugo-creative-theme"
 			description = "Continuous integration & Continous delivery setup"
 
 		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to date"
-            description = "Up to date with new technologies and methodologies."
+			icon = "fa-newspaper-o"
+			title = "Up to date"
+			description = "Up to date with new technologies and methodologies."
 
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to write your code with love these days!"
+		[[params.services.list]]
+			icon = "fa-heart"
+			title = "Made with Love"
+			description = "You have to write your code with love these days!"
 
 
-    # Portfolio modals
-    [params.portfolio]
-    	title = "Portfolio"
+	# Portfolio modals
+	[params.portfolio]
+		title = "Portfolio"
 
 	[params.portfolio.modal]
-        #client = "Client"
-        #date = "Date"
-        category = "Category"
-        buttonText = "Close"
+		#client = "Client"
+		#date = "Date"
+		category = "Category"
+		buttonText = "Close"
 
-    # Aside section
+	# Aside section
 	#[params.aside]
 	#	headline = "Visit my personal blog"
 	#	[params.aside.button]

@@ -1,0 +1,183 @@
+{{ "<!-- CV -->" | safeHTML }}
+<div class="row row-eq-height cv">
+	<div class="col-lg-3 bg-primary cv-contact">
+		<p class="name">
+			<img src="{{ .Site.BaseURL }}img/me.png" alt="{{.Site.Params.name}} photo">
+			{{ if .IsPage }}
+			<a href="{{ .Site.BaseURL }}">{{.Site.Params.name}}</a>
+			{{ else }}
+			<a href="{{ .Site.BaseURL }}cv">
+				Paweł Chudzik
+			</a>
+			{{ end }}
+		</p>
+		<p>
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+			<a href="mailto:{{ .Site.Params.contact.email }}">
+				{{ .Site.Params.contact.email }}
+			</a>
+		</p>
+		<p>
+			<i class="fa fa-github" aria-hidden="true"></i>
+			<a href="https://github.com/{{ .Site.Params.contact.githubUser }}" target="_blank">
+				github.com/{{ .Site.Params.contact.githubUser }}
+			</a>
+		</p>
+		<p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			{{ .Site.Params.contact.phone }}
+		</p>
+	</div>
+	<div class="col-lg-8 col-lg-offset-1">
+		<div>
+			<h1 class="page-header">Skills</h1>
+			<div>
+				<ul>
+					<li>
+						Good <strong>Java SE</strong> and <strong>Java EE</strong> knowledge. Basic
+						<strong>scala</strong> and <strong>groovy</strong>
+					</li>
+					<li>
+						Basic TCP/IP programming in java
+					</li>
+					<li>
+						jvm frameworks and tools:
+						<ul>
+							<li>
+								<strong>Spring</strong> (2.5, 3.x and 4.x).
+								<strong>Spring MVC</strong>,
+								<strong>Spring Data</strong>,
+								<strong>Spring Security</strong>
+							</li>
+							<li>JPA, <strong>Hibernate</strong></li>
+							<li>Apache Wicket</li>
+							<li>ActiveMQ</li>
+							<li>Junit, TestNG, <strong>Spock</strong></li>
+							<li>Maven, Gradle</li>
+						</ul>
+					</li>
+					<li>
+						databases:
+						<ul>
+							<li>Oracle</li>
+							<li>PostgreSQL</li>
+							<li>MySQL</li>
+							<li>PL/SQL</li>
+							<li>Apache Cassandra</li>
+						</ul>
+					</li>
+					<li>Experience in web interface design</li>
+					<li>Website design HTML and basic CSS,
+						<strong>jQuery</strong>,
+						<strong>angularJS</strong>,
+						<strong>reactJS + redux</strong></li>
+					<li>Modern websites development tooling
+						<strong>grunt</strong>,
+						<strong>gulp</strong>
+						<strong>webpack</strong>
+						<strong>babel</strong>
+						<strong>npm</strong>
+					</li>
+					<li>
+						Development environment <strong>Jenkins</strong>, <strong>Bamboo</strong>, gerrit, jira
+					</li>
+					<li>
+						Experience in writing and maintaining <strong>integration tests</strong>
+					</li>
+					<li>
+						Practical <strong>Object Oriented Design</strong>
+					</li>
+					<li>
+						<strong>NodeJS</strong> npm, mocha, jasmine, karma, phantomJS, jsdom
+					</li>
+					<li>
+						Linux <strong>bash scripting</strong>
+					</li>
+					<li>
+						Expierence in designing and maintaining distributed systems processing a lot of data (<strong>Big
+						Data</strong>)
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<h1 class="page-header">Work Experience</h1>
+			<div>
+				<dl class="dl-horizontal">
+					<dt>since 2013</dt>
+					<dd>
+						<p>Senior Java Developer in Roche Poland (contractor)</p>
+						<ul>
+							<li>
+								System for gathering information about Roche's associates. CRUD application.
+							</li>
+							<li>
+								Web application for cyclic review of Roche's products presentations (pptx). One module
+								responsible for presentation conversion to images. Second is for viewing, commenting and
+								approval process
+							</li>
+							<li>
+								Web interface for sharepoint site. Sharepoint is used as document storage. Application
+								allows to upload, edit and search for files. Possibility to search for documents across
+								multiple Sharepoint sites
+							</li>
+						</ul>
+					</dd>
+					<dt>2011-2013</dt>
+					<dd>
+						<p>Java Developer in Netsprint.eu</p>
+						<ul>
+							<li>
+								Design and implementation of "Topic Pages". Possibility to gather articles on the same
+								topic from multiple data sources.
+							</li>
+							<li>
+								Design and implementation of data gathering javascript files for audience.netsprint.eu
+							</li>
+							<li>
+								Design and implementation of integration testing platform for behavioural targeting
+								platform. Multiple selenium instances running on multiple servers providing real life
+								data for system under tests.
+							</li>
+							<li>
+								Design of storage size optimization solution. Detection of repeating data (documents
+								content, multimedia data). Interesting task because of requirements - minimal impact on
+								existing architecture, and data load - 70+ millions of documents monthly.
+							</li>
+						</ul>
+					</dd>
+					<dt>2009</dt>
+					<dd>
+						<p>
+							C/C++ developer Bombardier Transportation apprenticeship. Simple program for data conversion
+							between independent systems.
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div>
+			<h1 class="page-header">Education</h1>
+			<div>
+				<dl class="dl-horizontal">
+					<dt>2011 - 2013</dt>
+					<dd>
+						Polish - Japanese Academy of Information Technology. Master's degree in computer science
+						specialization database administration and management.
+					</dd>
+					<dt>2008 - 2011</dt>
+					<dd>
+						Siedlce University of Natural Sciences and Humanities. Engineer's degree in computer science
+						specialization programming and database management
+					</dd>
+					<dt>2005 - 2008</dt>
+					<dd>
+						School Complex nr1 in Mińsk Mazowiecki. Mathematics - computer science profile.
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

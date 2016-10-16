@@ -13,9 +13,11 @@
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
                 {{ with .Site.Params.about }}
-                    <a href="{{ .buttonLink }}" class="btn btn-default btn-xl page-scroll">{{ .buttonText }}</a>
+                    <a href="#cv" class="btn btn-default btn-xl page-scroll" data-toggle="modal">Checkout my CV</a>
                 {{ end }}
             </div>
         </div>
     </div>
 </section>
+
+{{ partial "cv-modal.html" . }}
