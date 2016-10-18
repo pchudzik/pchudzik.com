@@ -111,11 +111,11 @@ theme = "hugo-creative-theme"
 		buttonText = "Close"
 
 	# Aside section
-	#[params.aside]
-	#	headline = "Visit my personal blog"
-	#	[params.aside.button]
-	#		text = "Go now!"
-	#		link = "//github.com/digitalcraftsman/hugo-creative-theme"
+	[params.aside]
+		headline = "Visit my personal blog"
+		[params.aside.button]
+			text = "Go now!"
+			link = "//blog.pchudzik.com"
 
 	# Contact section
 	[params.contact]
