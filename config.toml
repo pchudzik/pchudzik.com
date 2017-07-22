@@ -50,7 +50,7 @@ theme = "hugo-creative-theme"
 	# About section
 	[params.about]
 		headline	= "About me"
-		description = "My name is Paweł Chudzik I live in Królewiec small vilage next to Mińsk Mazowiecki in Poland. I'm software engineer with 6+ years of experience in solving complex and trival problems. During my career I have been developing a lot of things from big and complicated systems to small few liners to make life easier. I have expierence in variety of technologies, web frameworks, application servers, databases and tools. I care about good quality software. In pursuit to find perfect code I'm constantly improving my skills by learning new technologies and frameworks."
+		description = "My name is Paweł Chudzik I live in Królewiec small village next to Mińsk Mazowiecki in Poland. I'm software engineer with 6+ years of experience in solving complex and trivial problems. During my career I have been developing a lot of things from big and complicated systems to small few liners to make life easier. I have experience in variety of technologies, web frameworks, application servers, databases and tools. I care about good quality software. In pursuit to find perfect code I'm constantly improving my skills by learning new technologies and frameworks."
 		buttonText  = "Get started!"
 		buttonLink = "#contact"
 
@@ -66,17 +66,17 @@ theme = "hugo-creative-theme"
 
 		[[params.services.list]]
 			icon = "fa-paper-plane"
-			title = "Agile partices"
+			title = "Agile practices"
 			description = "Customer satisfaction is achievable by early and continuous delivery of valuable software."
 
 		[[params.services.list]]
 			icon = "fa-cog"
-			title = "Software arhitecture"
+			title = "Software architecture"
 			description = "The important stuff - whatever that is. Always trying to maximize the amount of work not needed to be done."
 
 		[[params.services.list]]
 			icon = "fa-users"
-			title = "Team managment"
+			title = "Team management"
 			description = "Best architectures, requirements, and designs emerge from self - organizing teams"
 
 		[[params.services.list]]
@@ -87,7 +87,7 @@ theme = "hugo-creative-theme"
 		[[params.services.list]]
 			icon = "fa-terminal"
 			title = "Development environment"
-			description = "Continuous integration & Continous delivery setup"
+			description = "Continuous integration & Continuous delivery setup"
 
 		[[params.services.list]]
 			icon = "fa-newspaper-o"
