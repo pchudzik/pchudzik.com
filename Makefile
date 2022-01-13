@@ -10,7 +10,7 @@ theme:
 
 build:
 	(rm -rf site && mkdir -p site)
-	docker run --rm  -it \
+	docker run --rm \
 		-v $(PWD):/src \
 		-v $(PWD)/site:/site \
 		-e "HUGO_ENV=production" \
@@ -21,7 +21,7 @@ serve:
 	docker run -it --rm -v $(PWD):/src -p 1313:1313  klakegg/hugo:0.83.1 server
 
 deploy:
-	docker run --rm -it \
+	docker run --rm \
 		-e NETLIFY_AUTH_TOKEN="$(NETLIFY_AUTH_TOKEN)" \
 		-e NETLIFY_SITE_ID="$(NETLIFY_SITE_ID)" \
 		-v $(PWD)/site:/project \
