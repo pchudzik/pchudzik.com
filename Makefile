@@ -5,7 +5,7 @@ NETLIFY_CLI_VERSION=8.6.23
 
 theme:
 	(rm -rf themes && mkdir -p themes)
-	(cd themes && git clone git@github.com:luizdepra/hugo-coder.git)
+	(cd themes && git clone https://github.com/luizdepra/hugo-coder.git)
 	(cd themes/hugo-coder && git checkout v1.1)
 
 build:
