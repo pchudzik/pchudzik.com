@@ -1,127 +1,140 @@
-baseurl = "//pchudzik.com/"
-languageCode = "en-us"
+baseURL = "https://pchudzik.com"
 title = "Paweł Chudzik"
-
-# to install theme mkdir themes && git clone git@github.com:digitalcraftsman/hugo-creative-theme.git
-theme = "hugo-creative-theme"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableEmoji = true
 
 [params]
+author = "Paweł Chudzik"
+description = "Paweł Chudzik's personal website"
+keywords = "blog,developer,personal"
+info = ["Senior Software Engineer"]
+avatarURL = "img/img.png"
+footerContent = ""
+dateFormat = "January 2, 2006"
+hideFooter = false
+hideCredits = false
+hideCopyright = false
+since = 2019
+# Git Commit in Footer, uncomment the line below to enable it
+commit = "https://github.com/luizdepra/hugo-coder/tree/"
+# Right To Left, shift content direction for languagues such as Arabic
+rtl = false
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "light"
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = true
+# Series see also post count
+maxSeeAlsoItems = 5
+# Custom CSS
+customCSS = []
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = []
+# Custom JS
+customJS = []
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+# [params.fathomAnalytics]
+# siteID = "ABCDE"
+# serverURL = "analytics.example.com" # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
 
-	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+# [params.plausibleAnalytics]
+# domain = "example.com"
+# serverURL = "analytics.example.com" # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more informtion take a look at the README.
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+# [params.goatCounter]
+# code = "code"
 
-	# To provide some metadata for search engines feel free to add a few
-	# information about you and your website.
-	name = "Paweł Chudzik"
-	description = "Paweł Chudzik homepage"
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+# [params.cloudflare]
+# token = "token"
 
-	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+# [params.matomo]
+# siteID = "ABCDE" # Default value is "1", overwrite this if you are cloud-hosting
+# serverURL = "analytics.example.com" # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
 
-	analyticsCode = "UA-85460417-1"
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+# [params.googleTagManager]
+# id = "gid"
 
-	# Navigation
-	[params.navigation]
-		brand = "Paweł Chudzik"
-
-		[params.navigation.links]
-			about	 = "About"
-			services  = "Services"
-			portfolio = "Portfolio"
-			contact   = "Contact"
-
-
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan	 = "Paweł Chudzik"
-		subtitle   = "Eager to learn<br>IT consultant<br>Java developer<br>Javascript developer<br>Clean code enthusiast<br>Automated testing fan<br>Perfect software architecture chaser"
-		buttonText = "Find out more"
-
-	# About section
-	[params.about]
-		headline	= "About me"
-		description = "My name is Paweł Chudzik I live in Królewiec small village next to Mińsk Mazowiecki in Poland. I'm software engineer with 6+ years of experience in solving complex and trivial problems. During my career I have been developing a lot of things from big and complicated systems to small few liners to make life easier. I have experience in variety of technologies, web frameworks, application servers, databases and tools. I care about good quality software. In pursuit to find perfect code I'm constantly improving my skills by learning new technologies and frameworks."
-		buttonText  = "Get started!"
-		buttonLink = "#contact"
-
-
-	# Service section
-	[params.services]
-		headline = "At your service"
-
-		[[params.services.list]]
-			icon = "fa-code"
-			title = "Software development"
-			description = "Well-tested good quality software which works."
-
-		[[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Agile practices"
-			description = "Customer satisfaction is achievable by early and continuous delivery of valuable software."
-
-		[[params.services.list]]
-			icon = "fa-cog"
-			title = "Software architecture"
-			description = "The important stuff - whatever that is. Always trying to maximize the amount of work not needed to be done."
-
-		[[params.services.list]]
-			icon = "fa-users"
-			title = "Team management"
-			description = "Best architectures, requirements, and designs emerge from self - organizing teams"
-
-		[[params.services.list]]
-			icon = "fa-puzzle-piece"
-			title = "Technology advice"
-			description = "Sometimes it hard to decide where to start."
-
-		[[params.services.list]]
-			icon = "fa-terminal"
-			title = "Development environment"
-			description = "Continuous integration & Continuous delivery setup"
-
-		[[params.services.list]]
-			icon = "fa-newspaper-o"
-			title = "Up to date"
-			description = "Up to date with new technologies and methodologies."
-
-		[[params.services.list]]
-			icon = "fa-heart"
-			title = "Made with Love"
-			description = "You have to write your code with love these days!"
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+childsrc = ["'self'"]
+fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+formaction = ["'self'"]
+framesrc = ["'self'"]
+imgsrc = ["'self'"]
+objectsrc = ["'none'"]
+stylesrc = [
+  "'self'",
+  "'unsafe-inline'",
+  "https://fonts.googleapis.com/",
+  "https://cdn.jsdelivr.net/"
+]
+scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
+prefetchsrc = ["'self'"]
+# connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
+connectsrc = ["'self'", "https://www.google-analytics.com"]
 
 
-	# Portfolio modals
-	[params.portfolio]
-		title = "Portfolio"
+[[params.social]]
+name = "Github"
+icon = "fa fa-github"
+weight = 1
+url = "https://github.com/pchudzik"
 
-	[params.portfolio.modal]
-		#client = "Client"
-		#date = "Date"
-		category = "Category"
-		buttonText = "Close"
+# [[params.social]]
+# name = "Twitter"
+# icon = "fa fa-twitter"
+# weight = 3
+# url = "https://twitter.com/pchudzik1"
 
-	# Aside section
-	[params.aside]
-		headline = "Visit my personal blog"
-		[params.aside.button]
-			text = "Go now!"
-			link = "//blog.pchudzik.com"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-linkedin"
+weight = 4
+url = "https://www.linkedin.com/in/pawel-chudzik/"
 
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!"
-		phone = "+48 503 695 927"
-		email = "pawel.chudzik@gmail.com"
-		githubUser = "pchudzik"
-		githubLink = "https://github.com/pchudzik"
+
+[[params.social]]
+name = "RSS"
+icon = "fa fa-rss"
+weight = 6
+url = "https://blog.pchudzik.com/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 2
+url = "https://blog.pchudzik.com"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Contact me"
+weight = 5
+url = "contact/"

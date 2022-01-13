@@ -1,8 +1,0 @@
-modalID: 3
-title: Angular Template Cache
-date: 2016-09-04
-img: npm.png
-client: angular-tempalte-cache
-clientLink: "https://github.com/pchudzik/angular-template-cache"
-category: Project build helper
-description: Grabs all your html files into angular $templateCache and stores them in single file.

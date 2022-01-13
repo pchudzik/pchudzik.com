@@ -1,8 +1,0 @@
-modalID: 1
-title: springmock
-date: 2017-07-22
-img: springmock.png
-client: springmock
-clientLink: "https://github.com/pchudzik/springmock"
-category: spring framework enchancment
-description: Alternative spring mocking infrastructure. Allows to inject mocks and create spies using any mocking library. With springmock you can easily create and inject spock mocks into spock Specification and mockiot mocks into junit test case.

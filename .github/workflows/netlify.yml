@@ -1,0 +1,26 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Make directories
+        run: |
+          mkdir -p themes
+          mkdir -p site
+      - name: Download theme
+        run: make theme
+      - name: Build site
+        run: make build
+      - name: Deploy
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: make deploy

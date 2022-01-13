@@ -1,8 +1,0 @@
-modalID: 2
-title: Toggl Reporter
-date: 2016-07-17
-img: toggl-reporter.png
-client: toggl-reporter
-clientLink: "https://github.com/pchudzik/toggl-reporter"
-category: Web utility
-description: Application allows to generate activity reports from http://toggl.com It is also poc for bower/gulp less application with npm as dependency manager and build tool.
