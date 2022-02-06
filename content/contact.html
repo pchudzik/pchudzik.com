@@ -1,7 +1,7 @@
 +++ title = "Contact"
 slug = "contact"
 +++
-<form data-netlify="true" name="contact" method="POST">
+<form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true">
     <p>
         Ready to start your next project with me? That's great!
         Email me, and I will get back to you as soon as possible!
@@ -18,6 +18,7 @@ slug = "contact"
         <label style="vertical-align: top; min-width: 10em; display: inline-block;">Your message:</label>
         <textarea style="width: 30em; height: 20em;" name="message"></textarea>
     </div>
+    <div data-netlify-recaptcha="true"></div>
     <div style="text-align: center">
         <button type="submit">Send</button>
     </div>
